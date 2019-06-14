@@ -26,8 +26,8 @@ function write-something {
         [string]$Message,
         [parameter(HelpMessage = "Repeat this a set number of times")]
         [int32]$RepeatCount
-}
     )
+}
 for($i=0;$i -le $RepeatCount;$i++){
     Write-Verbose -Message "$($Message)" -Verbose
     }
